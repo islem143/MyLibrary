@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+
+
+    <script src="assets/script/app.js" defer></script>
+</head>
+
+<body>
+
+    <header id="header">
+
+        <div id="headContent">
+            <h1 id="title">MyLibrary</h1>
+            <button class="btn" id="addBook">Add A Book</button>
+        </div>
+
+    </header>
+    <div id="container"></div>
+    <div class="addModal closed modal">
+        <div class="modalHeader">
+            <h1>Add Modal</h1>
+            <span id="error"></span>
+        </div>
+        <div class="modalBody">
+            <label for="Title">Title</label>
+            <input class="input" type="text" name="Title" id="title">
+            <label for="Author">Author</label>
+            <input class="input" type="text" name="Author" id="author">
+            <label for="nbrPages">Number Of Pages</label>
+            <input class="input" type="number" name="nbrPages" min="0" id="nbrPages">
+            <label for="image">Image Url</label>
+            <input class="input" type="url" name="image" id="url">
+        </div>
+        <div class="modalFooter">
+            <button class="cancelBtn btn">Cancel</button>
+            <button class="addBtn btn">Add</button>
+        </div>
+    </div>
+
+    <div class="modal-overlay closed">
+    </div>
+
+
+
+
+
+</body>
+
+</html>
